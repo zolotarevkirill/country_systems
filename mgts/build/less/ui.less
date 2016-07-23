@@ -1,0 +1,187 @@
+
+.margin-b-30 {
+	margin-bottom: 30px;
+}
+.text-primary {
+	color: @blue;
+}
+.f-size-16 {
+	font-size: 16px;
+}
+a {
+	color: #0083ca;
+}
+.grey {
+	color: #a9a9a9;
+}
+.breadcrums {
+	margin: 15px 0 30px;
+	ul {
+		padding-left: 0;
+		list-style-type: none;
+		li {
+			display: inline-block;
+			vertical-align: middle;
+			font-size: 12px;
+			position: relative;
+			margin-left: 10px;
+			&:before {
+				content: '';
+				display: inline-block;
+				vertical-align: middle;
+				content: '';
+				margin-right: 10px;
+				border-style: solid;
+				border-width: 4px 0 4px 8px;
+				border-color: transparent transparent transparent #d4d7dc;
+			}
+			a {
+				color: #787878;
+			}
+			&:last-child {
+
+				a {
+					pointer-events: none;
+					text-decoration: underline;
+				}
+			}
+			&:first-child {
+				margin:0;
+			}
+		}
+	}
+}
+.styled-ul {
+	list-style-type: none;
+	padding-left: 20px;
+	li {
+		position: relative;
+		&:after {
+			content: '';
+			width: 6px;
+			height: 6px;
+			background: @blue;
+			position: absolute;
+			left: -20px;
+			top:7px;
+		}
+	}
+}
+.my {
+	&-flex {
+		display: flex;
+	}
+	&-navigation {
+		&.my-navigation {
+			&--flex {
+				ul {
+					list-style-type: none;
+					display: flex;
+					padding: 0;
+					margin:0;
+				}
+			}
+			&--flex-center {
+				ul {
+					justify-content: center;
+				}
+			}
+			&--has-inner {
+				nav {
+					position: relative;
+					&>ul{
+						&>li {
+							
+							&>ul {
+								display: none;
+								position: absolute;
+								left: 0;
+								top: 100%;
+								width: 100%;
+							}
+							&:hover,&:focus {
+								&>ul {
+									display: flex;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.btn {
+	border-radius: 0;
+	border: none;
+	padding: 10px 15px;
+	&-primary {
+		background: @blue;
+		span {
+			display: inline-block;
+			padding-left: 25px;
+			position: relative;
+			&:before {
+				content: '';
+				position: absolute;
+				width: 18px;
+				height: 18px;
+				top: 50%;
+				margin-top: -9px;
+				left: 0;
+				background: url(../img/sprite.png) -118px 0 no-repeat;
+			}
+		}
+		&.btn {
+			&-ghost {
+				background: 0 0;
+				border-color: @blue;
+				border-style: solid;
+				border-width: 1px;
+				color: @blue;
+				&:hover,&:focus {
+					color: #fff;
+					background-color: @blue;
+
+				}
+			}
+			&-big {
+				font-size: 21px;
+				font-weight: 600px;
+				border-width: 2px;
+			}
+		}
+	}
+	&.width-fix {
+		width: 70%;
+	}
+}
+.modal-content {
+	border-radius: 0;
+}
+.regions-list {
+	padding-left: 0;
+	list-style-type: none;
+	margin-bottom: 0;
+	a {
+		font-weight: 600;
+	}
+	.active {
+		a {
+			font-weight: 700;
+		}
+	}
+}
+.order-form {
+	label {
+		font-weight: 400;
+	}
+	.btn {
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+}
+.form-control {
+	border-radius: 0;
+	box-shadow: none;
+}

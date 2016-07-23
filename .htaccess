@@ -1,0 +1,817 @@
+Options -Indexes 
+ErrorDocument 404 /404.php
+
+<IfModule mod_php5.c>
+	php_flag allow_call_time_pass_reference 1
+	php_flag session.use_trans_sid off
+
+	#php_value display_errors 1
+
+	#php_value mbstring.internal_encoding UTF-8
+</IfModule>
+
+<IfModule mod_rewrite.c>
+	Options +FollowSymLinks
+	RewriteEngine On
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-l
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteCond %{REQUEST_FILENAME} !/bitrix/urlrewrite.php$
+	RewriteRule ^(.*)$ /bitrix/urlrewrite.php [L]
+	RewriteRule .* - [E=REMOTE_USER:%{HTTP:Authorization}]
+RewriteCond %{HTTP_HOST} ^mysecretplace.ru
+RewriteRule (.*) http://www.mysecretplace.ru/$1 [R=301,L]
+</IfModule>
+
+<IfModule mod_dir.c>
+	DirectoryIndex index.php index.html
+</IfModule>
+
+<IfModule mod_expires.c>
+	ExpiresActive on
+	ExpiresByType image/jpeg "access plus 3 day"
+	ExpiresByType image/gif "access plus 3 day"
+</IfModule>
+
+Redirect 301 /products/vaginy-i-masturbatory/23677/ /products/vaginy-i-masturbatory16/
+
+Redirect 301 /products/strapony-i-falloprotezy/23705/ /products/jenskie-strapony32/26247/
+
+Redirect 301 /products/strapony-i-falloprotezy/23702/ /products/jenskie-strapony32/26258/
+
+Redirect 301 /products/vozbujdayushchie-sredstva-dlya-jenshchin/ /
+
+Redirect 301 /products/kolca-i-nasadki/22956/ /products/nasadki39/25054/
+
+Redirect 301 /products/strapony-i-falloprotezy/ /products/strapony-i-falloprotezy21/
+
+Redirect 301 /products/vaginy-i-masturbatory/22990/ /products/vaginy15/25170/
+
+Redirect 301 /products/strapony-i-falloprotezy/23710/ /products/jenskie-strapony32/26252/
+
+Redirect 301 /products/bdsm/maski-klyapy-osheyniki/23322/ /products/maski-klyapy-osheyniki59/25676/
+
+Redirect 301 /products/bdsm/maski-klyapy-osheyniki/23327/ /products/maski-klyapy-osheyniki59/25681/
+
+Redirect 301 /products/bdsm/maski-klyapy-osheyniki/23309/ /products/maski-klyapy-osheyniki59/25687/
+
+Redirect 301 /products/bdsm/maski-klyapy-osheyniki/23312/ /products/maski-klyapy-osheyniki59/25664/
+
+Redirect 301 /products/kolca-i-nasadki/vibrokolca/23448/ /products/vibrokolca15/25116/
+
+Redirect 301 /products/duhi-s-feromonami/jenskie/ /products/duhi-s-feromonami68/jenskie21/
+
+Redirect 301 /products/bdsm/maski-klyapy-osheyniki/23317/ /products/maski-klyapy-osheyniki59/25671/
+
+Redirect 301 /products/bdsm/maski-klyapy-osheyniki/23326/ /products/maski-klyapy-osheyniki59/25680/
+
+Redirect 301 /products/bdsm/maski-klyapy-osheyniki/23323/ /products/maski-klyapy-osheyniki59/25677/
+
+Redirect 301 /products/duhi-s-feromonami/dlya-mujchin/ /products/duhi-s-feromonami68/dlya-mujchin64/
+
+Redirect 301 /products/bdsm/maski-klyapy-osheyniki/23324/ /products/maski-klyapy-osheyniki59/25678/
+
+Redirect 301 /products/bdsm/maski-klyapy-osheyniki/23328/ /products/maski-klyapy-osheyniki59/25682/
+
+Redirect 301 /products/kolca-i-nasadki/nasadki/22936/ /products/nasadki39/25034/
+
+Redirect 301 /products/bdsm/maski-klyapy-osheyniki/23310/ /products/maski-klyapy-osheyniki59/25662/
+
+Redirect 301 /products/bdsm/maski-klyapy-osheyniki/23316/ /products/bdsm86/maski-klyapy-osheyniki59/25670/
+
+Redirect 301 /products/kolca-i-nasadki/nasadki/22952/ /products/nasadki39/25050/
+
+Redirect 301 /products/bdsm/maski-klyapy-osheyniki/23305/ /products/maski-klyapy-osheyniki59/25656/
+
+Redirect 301 /products/kolca-i-nasadki/vibrokolca/23460/ /products/vibrokolca15/25128/
+
+Redirect 301 /products/bdsm/maski-klyapy-osheyniki/23311/ /products/maski-klyapy-osheyniki59/25668/
+
+Redirect 301 /products/bdsm/maski-klyapy-osheyniki/23319/ /products/maski-klyapy-osheyniki59/25673/
+
+Redirect 301 /products/kolca-i-nasadki/vibrokolca/23438/ /products/vibrokolca15/25106/
+
+Redirect 301 /products/kolca-i-nasadki/nasadki/22930/ /products/nasadki39/25028/
+
+Redirect 301 /products/kolca-i-nasadki/nasadki/22935/ /products/nasadki39/25033/
+
+Redirect 301 /products/kolca-i-nasadki/vibrokolca/23455/ /products/vibrokolca15/25123/
+
+Redirect 301 /products/vakuumnye-pompy/dlya-penisa/ /products/vakuumnye-pompy31/dlya-penisa24/
+
+Redirect 301 /products/strapony-i-falloprotezy/universalnye/ /products/strapony-i-falloprotezy21/universalnye2/
+
+Redirect 301 /products/bdsm/maski-klyapy-osheyniki/23299/ /products/maski-klyapy-osheyniki59/25649/
+
+Redirect 301 /products/kolca-i-nasadki/nasadki/22950/ /products/nasadki39/25048/
+
+Redirect 301 /products/kolca-i-nasadki/vibrokolca/23454/ /products/vibrokolca15/25122/
+
+Redirect 301 /products/kolca-i-nasadki/vibrokolca/23445/ /products/vibrokolca15/25113/
+
+Redirect 301 /products/kolca-i-nasadki/vibrokolca/23443/ /products/vibrokolca15/25111/
+
+Redirect 301 /products/vaginy-i-masturbatory/masturbatory-s-vibro/23681/ /products/masturbatory-s-vibro100/25179/
+
+Redirect 301 /products/kolca-i-nasadki/nasadki/22955/ /products/nasadki39/25053/
+
+Redirect 301 /products/lubrikanty/vaginalno-analnye-smazki/ /products/lubrikanty48/vaginalno-analnye-smazki57/
+
+Redirect 301 /products/bdsm/maski-klyapy-osheyniki/23308/ /products/maski-klyapy-osheyniki59/25659/
+
+Redirect 301 /products/kolca-i-nasadki/nasadki/22946/ /products/nasadki39/25044/
+
+Redirect 301 /products/lubrikanty/23163/ /products/oralnye-smazki15/25779/
+
+Redirect 301 /products/bdsm/maski-klyapy-osheyniki/23306/ /products/maski-klyapy-osheyniki59/25657/
+
+Redirect 301 /products/kolca-i-nasadki/vibrokolca/ /products/kolca-i-nasadki17/vibrokolca15/
+
+Redirect 301 /products/suveniry/22461/ /products/suveniry34/24551/
+
+Redirect 301 /products/bdsm/maski-klyapy-osheyniki/23318/ /products/maski-klyapy-osheyniki59/25672/
+
+Redirect 301 /products/kliteralnye-igrushki/ /products/kliteralnye-igrushki100/
+
+Redirect 301 /products/kolca-i-nasadki/vibrokolca/23452/ /products/vibrokolca15/25120/
+
+Redirect 301 /products/kolca-i-nasadki/erekcionnye-kolca/ /products/kolca-i-nasadki17/erekcionnye-kolca6/
+
+Redirect 301 /products/vaginy-i-masturbatory/masturbatory-tenga/ /products/vaginy-i-masturbatory16/masturbatory-tenga69/
+
+Redirect 301 /products/bdsm/maski-klyapy-osheyniki/23307/ /products/maski-klyapy-osheyniki59/25658/
+
+Redirect 301 /products/duhi-s-feromonami/23741/ /products/jenskie21/26302/
+
+Redirect 301 /products/kukly/ /products/kukly99/
+
+Redirect 301 /products/duhi-s-feromonami/23721/ /products/jenskie21/26279/
+
+Redirect 301 /products/duhi-s-feromonami/23737/ /products/jenskie21/26298/
+
+Redirect 301 /products/prezervativy/ /products/prezervativy29/
+
+Redirect 301 /products/kolca-i-nasadki/nasadki/22957/ /products/nasadki39/25055/
+
+Redirect 301 /products/bdsm/pletki-shlepalki/ /products/bdsm86/pletki-shlepalki20/
+
+Redirect 301 /products/bdsm/maski-klyapy-osheyniki/23321/ /products/maski-klyapy-osheyniki59/25675/
+
+Redirect 301 /products/bdsm/maski-klyapy-osheyniki/23320/ /products/maski-klyapy-osheyniki59/25674/
+
+Redirect 301 /products/suveniry/22454/ /products/suveniry34/24544/
+
+Redirect 301 /products/kolca-i-nasadki/nasadki/22933/ /products/nasadki39/25031/
+
+Redirect 301 /products/kolca-i-nasadki/nasadki/22948/ /products/nasadki39/25046/
+
+Redirect 301 /products/lubrikanty/23151/ /products/oralnye-smazki15/25767/
+
+Redirect 301 /products/bdsm/naruchniki-kandaly-fiksaciya/ /products/bdsm86/naruchniki-kandaly-fiksaciya16/
+
+Redirect 301 /products/kolca-i-nasadki/22959/ /products/nasadki39/25057/
+
+Redirect 301 /products/bdsm/maski-klyapy-osheyniki/23314/ /products/maski-klyapy-osheyniki59/25667/
+
+Redirect 301 /products/kolca-i-nasadki/nasadki/22940/ /products/nasadki39/25038/
+
+Redirect 301 /products/bdsm/maski-klyapy-osheyniki/23301/ /products/maski-klyapy-osheyniki59/25651/
+
+Redirect 301 /products/vaginy-i-masturbatory/masturbatory-s-vibro/23679/ /products/masturbatory-s-vibro100/25177/
+
+Redirect 301 /products/analnye-igrushki/ /products/analnye-igrushki78/
+
+Redirect 301 /products/lubrikanty/oralnye-smazki/ /products/lubrikanty48/oralnye-smazki15/
+
+Redirect 301 /products/bdsm/maski-klyapy-osheyniki/23302/ /products/maski-klyapy-osheyniki59/25652/
+
+Redirect 301 /products/kolca-i-nasadki/nasadki/ /products/kolca-i-nasadki17/nasadki39/
+
+Redirect 301 /products/kolca-i-nasadki/vibrokolca/23462/ /products/vibrokolca15/25130/
+
+Redirect 301 /products/bdsm/maski-klyapy-osheyniki/23325/ /products/maski-klyapy-osheyniki59/25679/
+
+Redirect 301 /products/lubrikanty/23164/ /products/oralnye-smazki15/25780/
+
+Redirect 301 /products/bdsm/maski-klyapy-osheyniki/23304/ /products/maski-klyapy-osheyniki59/25655/
+
+Redirect 301 /products/kolca-i-nasadki/nasadki/22949/ /products/nasadki39/25047/
+
+Redirect 301 /products/bdsm/maski-klyapy-osheyniki/23303/ /products/maski-klyapy-osheyniki59/25653/
+
+Redirect 301 /products/lubrikanty/23167/ /products/oralnye-smazki15/25783/
+
+Redirect 301 /products/duhi-s-feromonami/23724/ /products/jenskie21/26282/
+
+Redirect 301 /products/lubrikanty/23169/ /products/oralnye-smazki15/25785/
+
+Redirect 301 /products/bdsm/maski-klyapy-osheyniki/23313/ /products/maski-klyapy-osheyniki59/25666/
+
+Redirect 301 /products/bele/ /products/bele5/
+
+Redirect 301 /products/kolca-i-nasadki/nasadki/22953/ /products/nasadki39/25051/
+
+Redirect 301 /products/kolca-i-nasadki/nasadki/22931/ /products/nasadki39/25029/
+
+Redirect 301 /products/lubrikanty/vaginalnye-smazki/ /products/lubrikanty48/vaginalnye-smazki75/
+
+Redirect 301 /products/kolca-i-nasadki/nasadki/22939/ /products/nasadki39/25037/
+
+Redirect 301 /products/kolca-i-nasadki/nasadki/22945/ /products/nasadki39/25043/
+
+Redirect 301 /products/vaginy-i-masturbatory/vaginy/ /products/vaginy-i-masturbatory16/vaginy15/
+
+Redirect 301 /products/kolca-i-nasadki/vibrokolca/23439/ /products/vibrokolca15/25107/
+
+Redirect 301 /products/kolca-i-nasadki/vibrokolca/23440/ /products/vibrokolca15/25108/
+
+Redirect 301 /products/lubrikanty/vozbujdayushchie-smazki/ /products/lubrikanty48/vozbujdayushchie-smazki67/
+
+Redirect 301 /products/bdsm/maski-klyapy-osheyniki/23315/ /products/maski-klyapy-osheyniki59/25669/
+
+Redirect 301 /products/kolca-i-nasadki/vibrokolca/23463/ /products/vibrokolca15/25131/
+
+Redirect 301 /products/lubrikanty/23165/ /products/oralnye-smazki15/25781/
+
+Redirect 301 /products/duhi-s-feromonami/23723/ /products/jenskie21/26281/
+
+Redirect 301 /products/duhi-s-feromonami/23718/ /products/jenskie21/26276/
+
+Redirect 301 /products/lubrikanty/23168/ /products/oralnye-smazki15/25784/
+
+Redirect 301 /products/duhi-s-feromonami/23722/ /products/jenskie21/26280/
+
+Redirect 301 /products/kolca-i-nasadki/vibrokolca/23449/ /products/vibrokolca15/25117/
+
+Redirect 301 /products/duhi-s-feromonami/23719/ /products/jenskie21/26277/
+
+Redirect 301 /products/kolca-i-nasadki/vibrokolca/23464/ /products/vibrokolca15/25132/
+
+Redirect 301 /products/kolca-i-nasadki/vibrokolca/23451/ /products/vibrokolca15/25119/
+
+Redirect 301 /products/kolca-i-nasadki/vibrokolca/23461/ /products/vibrokolca15/25129/
+
+Redirect 301 /products/lubrikanty/23152/ /products/oralnye-smazki15/25768/
+
+Redirect 301 /products/suveniry/22466/ /products/suveniry34/24556/
+
+Redirect 301 /products/bad-dlya-zdorovya-i-krasoty/22919/ /products/bad-dlya-zdorovya-i-krasoty4/25017/
+
+Redirect 301 /products/kolca-i-nasadki/nasadki/22951/ /products/nasadki39/25049/
+
+Redirect 301 /products/lubrikanty/ /products/lubrikanty48/
+
+Redirect 301 /products/kolca-i-nasadki/nasadki/22942/ /products/nasadki39/25040/
+
+Redirect 301 /products/lubrikanty/23159/ /products/oralnye-smazki15/25783/
+
+Redirect 301 /products/bdsm/ /products/bdsm86/
+
+Redirect 301 /products/bad-dlya-zdorovya-i-krasoty/22929/ /products/bad-dlya-zdorovya-i-krasoty4/25027/
+
+Redirect 301 /products/lubrikanty/23157/ /products/oralnye-smazki15/25773/
+
+Redirect 301 /products/duhi-s-feromonami/23747/ /products/jenskie21/26309/
+
+Redirect 301 /products/kolca-i-nasadki/vibrokolca/23453/ /products/vibrokolca15/25121/
+
+Redirect 301 /products/vaginy-i-masturbatory/23683/ /products/masturbatory-s-vibro100/25181/
+
+Redirect 301 /products/kolca-i-nasadki/nasadki/22941/ /products/nasadki39/25039/
+
+Redirect 301 /products/kolca-i-nasadki/22950/ /products/nasadki39/25048/
+
+Redirect 301 /products/strapony-i-falloprotezy/jenskie-strapony/ /products/strapony-i-falloprotezy21/jenskie-strapony32/
+
+Redirect 301 /products/vozbujdayushchie-sredstva-dlya-mujchin/22600/ /products/vozbujdayushchie-sredstva-dlya-mujchin74/24495/
+
+Redirect 301 /products/vakuumnye-pompy/23583/ /products/dlya-penisa24/26189/
+
+Redirect 301 /products/vaginy-i-masturbatory/22983/ /products/vaginy15/25162/
+
+Redirect 301 /products/kolca-i-nasadki/22957/ /products/nasadki39/25055/
+
+Redirect 301 /products/kolca-i-nasadki/nasadki/22938/ /products/nasadki39/25036/
+
+Redirect 301 /products/suveniry/22467/ /products/suveniry34/24557/
+
+Redirect 301 /products/massajnye-masla-i-svechi/22764/ /products/massajnye-masla-i-svechi6/24844/
+
+Redirect 301 /products/vozbujdayushchie-sredstva-dlya-mujchin/22608/ /products/vozbujdayushchie-sredstva-dlya-mujchin74/24504/
+
+Redirect 301 /products/lubrikanty/23160/ /products/oralnye-smazki15/25776/
+
+Redirect 301 /products/suveniry/22454/ /products/suveniry34/24544/
+
+Redirect 301 /products/kolca-i-nasadki/nasadki/22933/ /products/nasadki39/25031/
+
+Redirect 301 /products/kolca-i-nasadki/nasadki/22948/ /products/nasadki39/25046/
+
+Redirect 301 /products/lubrikanty/23151/ /products/oralnye-smazki15/25767/
+
+Redirect 301 /products/bdsm/naruchniki-kandaly-fiksaciya/ /products/bdsm86/naruchniki-kandaly-fiksaciya16/
+
+Redirect 301 /products/kolca-i-nasadki/22959/ /products/nasadki39/25057/
+
+Redirect 301 /products/bdsm/maski-klyapy-osheyniki/23314/ /products/maski-klyapy-osheyniki59/25667/
+
+Redirect 301 /products/bdsm/maski-klyapy-osheyniki/23301/ /products/maski-klyapy-osheyniki59/25651/
+
+Redirect 301 /products/vaginy-i-masturbatory/masturbatory-s-vibro/23679/ /products/masturbatory-s-vibro100/25177/
+
+Redirect 301 /products/lubrikanty/oralnye-smazki/ /products/lubrikanty48/oralnye-smazki15/
+
+Redirect 301 /products/bdsm/maski-klyapy-osheyniki/23302/ /products/maski-klyapy-osheyniki59/25652/
+
+Redirect 301 /products/kolca-i-nasadki/nasadki/ /products/kolca-i-nasadki17/nasadki39/
+
+Redirect 301 /products/kolca-i-nasadki/vibrokolca/23462/ /products/vibrokolca15/25130/
+
+Redirect 301 /products/lubrikanty/23164/ /products/oralnye-smazki15/25780/
+
+Redirect 301 /products/bdsm/maski-klyapy-osheyniki/23303/ /products/maski-klyapy-osheyniki59/25653/
+
+Redirect 301 /products/lubrikanty/23167/ /products/oralnye-smazki15/25775/
+
+Redirect 301 /products/duhi-s-feromonami/23724/ /products/jenskie21/26282/
+
+Redirect 301 /products/lubrikanty/23169/ /products/oralnye-smazki15/25785/
+
+Redirect 301 /products/bdsm/maski-klyapy-osheyniki/23313/ /products/maski-klyapy-osheyniki59/25666/
+
+Redirect 301 /products/bele/ /products/bele5/
+
+Redirect 301 /products/kolca-i-nasadki/nasadki/22953/ /products/nasadki39/25051/
+
+Redirect 301 /products/kolca-i-nasadki/nasadki/22931/ /products/nasadki39/25029/
+
+Redirect 301 /products/lubrikanty/vaginalnye-smazki/ /products/lubrikanty48/vaginalnye-smazki75/
+
+Redirect 301 /products/kolca-i-nasadki/22952/ /products/nasadki39/25050/
+
+Redirect 301 /products/vaginalnye-shariki/ /products/vaginalnye-shariki9/
+
+Redirect 301 /products/vozbujdayushchie-sredstva-dlya-mujchin/22609/ /products/vozbujdayushchie-sredstva-dlya-mujchin74/24505/
+
+Redirect 301 /products/duhi-s-feromonami/23743/ /products/jenskie21/26305/
+
+Redirect 301 /products/kolca-i-nasadki/nasadki/22932/ /products/nasadki39/25030/
+
+Redirect 301 /products/suveniry/22471/ /products/suveniry34/24561/
+
+Redirect 301 /products/bdsm/maski-klyapy-osheyniki/23300/ /products/maski-klyapy-osheyniki59/
+
+Redirect 301 /products/suveniry/22476/ /products/suveniry34/24566/
+
+Redirect 301 /products/kolca-i-nasadki/vibrokolca/23446/ /products/vibrokolca15/25114/
+
+Redirect 301 /products/drugoe/ /products/aksessuary-dlya-grudi56/
+
+Redirect 301 /products/vakuumnye-pompy/23569/ /products/dlya-penisa24/26175/
+
+Redirect 301 /products/vozbujdayushchie-sredstva-dlya-mujchin/22608/ /products/vozbujdayushchie-sredstva-dlya-mujchin74/24504/
+
+Redirect 301 /products/lubrikanty/23160/ /products/oralnye-smazki15/25776/
+
+Redirect 301 /products/kolca-i-nasadki/22942/ /products/nasadki39/25040/
+
+Redirect 301 /products/vakuumnye-pompy/23571/ /products/dlya-penisa24/26177/
+
+Redirect 301 /products/vakuumnye-pompy/23588/ /products/dlya-penisa24/26194/
+
+Redirect 301 /products/vakuumnye-pompy/23577/ /products/dlya-penisa24/26183/
+
+Redirect 301 /products/vaginy-i-masturbatory/23681/ /products/masturbatory-s-vibro100/25179/
+
+Redirect 301 /products/duhi-s-feromonami/23738/ /products/jenskie21/26299/
+
+Redirect 301 /products/massajnye-masla-i-svechi/22766/ /products/massajnye-masla-i-svechi6/24846/
+
+Redirect 301 /products/massajnye-masla-i-svechi/22745/ /products/massajnye-masla-i-svechi6/24825/
+
+Redirect 301 /products/bad-dlya-zdorovya-i-krasoty/22923/ /products/bad-dlya-zdorovya-i-krasoty4/25021/
+
+Redirect 301 /products/massajnye-masla-i-svechi/22744/ /products/massajnye-masla-i-svechi6/24824/
+
+Redirect 301 /products/vozbujdayushchie-sredstva-dlya-mujchin/22614/ /products/vozbujdayushchie-sredstva-dlya-mujchin74/24510/
+
+Redirect 301 /products/duhi-s-feromonami/23742/ /products/jenskie21/26304/
+
+Redirect 301 /products/vozbujdayushchie-sredstva-dlya-mujchin/22597/ /products/vozbujdayushchie-sredstva-dlya-mujchin74/24492/
+
+Redirect 301 /products/duhi-s-feromonami/23744/ /products/jenskie21/26306/
+
+Redirect 301 /products/vibropuli/ /products/vibropuli69/
+
+Redirect 301 /products/vozbujdayushchie-sredstva-dlya-jenshchin/22820/ /products/vozbujdayushchie-sredstva-dlya-jenshchin38/24915/
+
+Redirect 301 /products/lubrikanty/23150/ /products/oralnye-smazki15/25766/
+
+Redirect 301 /products/massajnye-masla-i-svechi/ /products/massajnye-masla-i-svechi6/
+
+Redirect 301 /products/suveniry/22456/ /products/suveniry34/24546/
+
+Redirect 301 /products/vaginy-i-masturbatory/masturbatory-s-vibro/23678/ /products/masturbatory-s-vibro100/25176/
+
+Redirect 301 /products/suveniry/22474/ /products/suveniry34/24564/
+
+Redirect 301 /products/vakuumnye-pompy/23578/ /products/dlya-penisa24/26184/
+
+Redirect 301 /products/bad-dlya-zdorovya-i-krasoty/22918/ /products/bad-dlya-zdorovya-i-krasoty4/25016/
+
+Redirect 301 /products/vakuumnye-pompy/23594/ /products/dlya-penisa24/26201/
+
+Redirect 301 /products/bad-dlya-zdorovya-i-krasoty/22920/ /products/bad-dlya-zdorovya-i-krasoty4/25018/
+
+Redirect 301 /products/strapony-i-falloprotezy/23716/ /products/jenskie-strapony32/26258/
+
+Redirect 301 /products/lubrikanty/23166/ /products/oralnye-smazki15/25782/
+
+Redirect 301 /products/strapony-i-falloprotezy/23717/ /products/jenskie-strapony32/26259/
+
+Redirect 301 /products/vozbujdayushchie-sredstva-dlya-jenshchin/22817/ /products/vozbujdayushchie-sredstva-dlya-jenshchin38/24912/
+
+Redirect 301 /products/vozbujdayushchie-sredstva-dlya-mujchin/22595/ /products/vozbujdayushchie-sredstva-dlya-mujchin74/24490/
+
+Redirect 301 /products/suveniry/22463/ /products/suveniry34/24553/
+
+Redirect 301 /products/bad-dlya-zdorovya-i-krasoty/22928/ /products/bad-dlya-zdorovya-i-krasoty4/25026/
+
+Redirect 301 /products/bad-dlya-zdorovya-i-krasoty/22925/ /products/bad-dlya-zdorovya-i-krasoty4/25023/
+
+Redirect 301 /products/suveniry/22457/ /products/suveniry34/24547/
+
+Redirect 301 /products/vakuumnye-pompy/23570/ /products/dlya-penisa24/26176/
+
+Redirect 301 /products/duhi-s-feromonami/23720/ /products/jenskie21/26278/
+
+Redirect 301 /products/vozbujdayushchie-sredstva-dlya-mujchin/22596/ /products/vozbujdayushchie-sredstva-dlya-mujchin74/24491/
+
+Redirect 301 /products/kolca-i-nasadki/22945/ /products/nasadki39/25043/
+
+Redirect 301 /products/strapony-i-falloprotezy/mujskie-strapony/ /products/strapony-i-falloprotezy21/mujskie-strapony28/
+
+Redirect 301 /products/suveniry/22472/ /products/suveniry34/24562/
+
+Redirect 301 /products/massajnye-masla-i-svechi/22760/ /products/massajnye-masla-i-svechi6/24840/
+
+Redirect 301 /products/vozbujdayushchie-sredstva-dlya-mujchin/22594/ /products/vozbujdayushchie-sredstva-dlya-mujchin74/24489/
+
+Redirect 301 /products/duhi-s-feromonami/23733/ /products/jenskie21/26292/
+
+Redirect 301 /products/vaginy-i-masturbatory/22986/ /products/vaginy15/25166/
+
+Redirect 301 /products/vaginy-i-masturbatory/masturbatory-s-vibro/23682/ /products/masturbatory-s-vibro100/25180/
+
+Redirect 301 /products/vakuumnye-pompy/23568/ /products/dlya-penisa24/26174/
+
+Redirect 301 /products/kolca-i-nasadki/22953/ /products/nasadki39/25051/
+
+Redirect 301 /products/massajnye-masla-i-svechi/22761/ /products/massajnye-masla-i-svechi6/24841/
+
+Redirect 301 /products/kolca-i-nasadki/22954/ /products/nasadki39/25052/
+
+Redirect 301 /products/strapony-i-falloprotezy/23936/ /products/universalnye2/26264/
+
+Redirect 301 /products/kolca-i-nasadki/22943/ /products/nasadki39/25041/
+
+Redirect 301 /products/bad-dlya-zdorovya-i-krasoty/ /products/bad-dlya-zdorovya-i-krasoty4/
+
+Redirect 301 /products/massajnye-masla-i-svechi/22756/ /products/massajnye-masla-i-svechi6/24836/
+
+Redirect 301 /products/vozbujdayushchie-sredstva-dlya-mujchin/22586/ /products/vozbujdayushchie-sredstva-dlya-mujchin74/24481/
+
+Redirect 301 /products/vaginy-i-masturbatory/22978/ /products/vaginy15/25157/
+
+Redirect 301 /products/vozbujdayushchie-sredstva-dlya-mujchin/22606/ /products/vozbujdayushchie-sredstva-dlya-mujchin74/24502/
+
+Redirect 301 /products/massajnye-masla-i-svechi/22740/ /products/massajnye-masla-i-svechi6/24820/
+
+Redirect 301 /products/vaginy-i-masturbatory/22985/ /products/vaginy15/25165/
+
+Redirect 301 /products/duhi-s-feromonami/ /products/duhi-s-feromonami68/
+
+Redirect 301 /products/lubrikanty/23147/ /products/oralnye-smazki15/25763/
+
+Redirect 301 /products/strapony-i-falloprotezy/23712/ /products/jenskie-strapony32/26254/
+
+Redirect 301 /products/massajnye-masla-i-svechi/22743/ /products/massajnye-masla-i-svechi6/24823/
+
+Redirect 301 /products/massajnye-masla-i-svechi/22746/ /products/massajnye-masla-i-svechi6/24826/
+
+Redirect 301 /products/massajnye-masla-i-svechi/22753/ /products/massajnye-masla-i-svechi6/24833/
+
+Redirect 301 /products/vaginy-i-masturbatory/22981/ /products/vaginy15/25160/
+
+
+Redirect 301 /products/kolca-i-nasadki/22948/ /products/nasadki39/25046/
+
+Redirect 301 /products/lubrikanty/23149/ /products/oralnye-smazki15/25765/
+
+Redirect 301 /products/lubrikanty/prolongatory/ /products/lubrikanty48/prolongatory95/
+
+Redirect 301 /products/massajnye-masla-i-svechi/22748/ /products/massajnye-masla-i-svechi6/24828/
+
+Redirect 301 /products/vakuumnye-pompy/23572/ /products/dlya-penisa24/26178/
+
+Redirect 301 /products/vakuumnye-pompy/23580/ /products/dlya-penisa24/26186/
+
+Redirect 301 /products/vakuumnye-pompy/23581/ /products/dlya-penisa24/26187/
+
+Redirect 301 /products/vaginy-i-masturbatory/22989/ /products/vaginy15/25169/
+
+Redirect 301 /products/falloimitatory/ /products/falloimitatory73/
+
+Redirect 301 /products/vaginy-i-masturbatory/22982/ /products/vaginy15/25161/
+
+Redirect 301 /products/massajnye-masla-i-svechi/22757/ /products/massajnye-masla-i-svechi6/24837/
+
+Redirect 301 /products/lubrikanty/23148/ /products/oralnye-smazki15/25764/
+
+Redirect 301 /products/massajnye-masla-i-svechi/22762/ /products/massajnye-masla-i-svechi6/24842/
+
+Redirect 301 /products/vozbujdayushchie-sredstva-dlya-mujchin/22610/ /products/vozbujdayushchie-sredstva-dlya-mujchin74/24506/
+
+Redirect 301 /products/jenskie-strapony32/26248/ /products/strapony-i-falloprotezy/23706/
+
+Redirect 301 /products/vozbujdayushchie-sredstva-dlya-mujchin/22585/ /products/vozbujdayushchie-sredstva-dlya-mujchin74/24480/
+
+Redirect 301 /products/vaginy-i-masturbatory/22977/ /products/vaginy15/25156/
+
+Redirect 301 /products/vakuumnye-pompy/23582/ /products/dlya-penisa24/26188/
+
+Redirect 301 /products/kolca-i-nasadki/22947/ /products/nasadki39/25045/
+
+Redirect 301 /products/vozbujdayushchie-sredstva-dlya-mujchin/22592/ /products/vozbujdayushchie-sredstva-dlya-mujchin74/24487/
+
+Redirect 301 /products/vaginy-i-masturbatory/22991/ /products/vaginy15/25171/
+
+Redirect 301 /products/vakuumnye-pompy/ /products/vakuumnye-pompy31/
+
+Redirect 301 /products/vozbujdayushchie-sredstva-dlya-mujchin/22607/ /products/vozbujdayushchie-sredstva-dlya-mujchin74/24503/
+
+Redirect 301 /products/kolca-i-nasadki/22941/ /products/nasadki39/25039/
+
+Redirect 301 /products/kolca-i-nasadki/22937/ /products/nasadki39/25035/
+
+Redirect 301 /products/vaginy-i-masturbatory/22976/ /products/vaginy15/25155/
+
+Redirect 301 /products/lubrikanty/23145/ /products/oralnye-smazki15/25761/
+
+Redirect 301 /products/massajnye-masla-i-svechi/22751/ /products/massajnye-masla-i-svechi6/24831/
+
+Redirect 301 /products/strapony-i-falloprotezy/23933/ /products/universalnye2/26261/
+
+Redirect 301 /products/strapony-i-falloprotezy/23938/ /products/universalnye2/26266/
+
+Redirect 301 /products/kolca-i-nasadki/22938/ /products/nasadki39/25036/
+
+Redirect 301 /products/strapony-i-falloprotezy/23934/ /products/universalnye2/26262/
+
+Redirect 301 /products/vakuumnye-pompy/23566/ /products/dlya-penisa24/26172/
+
+Redirect 301 /products/vakuumnye-pompy/23595/ /products/dlya-penisa24/26202/
+
+Redirect 301 /products/kolca-i-nasadki/22932/ /products/nasadki39/25030/
+
+Redirect 301 /products/massajnye-masla-i-svechi/22747/ /products/massajnye-masla-i-svechi6/24827/
+
+Redirect 301 /products/lubrikanty/23158/ /products/oralnye-smazki15/25774/
+
+Redirect 301 /products/vozbujdayushchie-sredstva-dlya-mujchin/22593/ /products/vozbujdayushchie-sredstva-dlya-mujchin74/24488/
+
+Redirect 301 /products/lubrikanty/23143/ /products/oralnye-smazki15/25759/
+
+Redirect 301 /products/massajnye-masla-i-svechi/22741/ /products/massajnye-masla-i-svechi6/24821/
+
+Redirect 301 /products/suveniry/22465/ /products/suveniry34/24555/
+
+Redirect 301 /products/vaginy-i-masturbatory/22994/ /products/vaginy15/25174/
+
+Redirect 301 /products/massajnye-masla-i-svechi/22759/ /products/massajnye-masla-i-svechi6/24839/
+
+Redirect 301 /products/lubrikanty/23153/ /products/oralnye-smazki15/25769/
+
+Redirect 301 /products/vozbujdayushchie-sredstva-dlya-mujchin/22591/ /products/vozbujdayushchie-sredstva-dlya-mujchin74/24486/
+
+Redirect 301 /products/vibratory/22449/ /products/vibratory100/26069/
+
+Redirect 301 /products/bdsm/maski-klyapy-osheyniki/ /products/bdsm86/maski-klyapy-osheyniki59/
+
+Redirect 301 /products/vakuumnye-pompy/23574/ /products/dlya-penisa24/26180/
+
+Redirect 301 /products/lubrikanty/23155/ /products/oralnye-smazki15/25771/
+
+Redirect 301 /products/kolca-i-nasadki/22931/ /products/nasadki39/25029/
+
+Redirect 301 /products/vaginy-i-masturbatory/22987/ /products/vaginy15/25167/
+
+Redirect 301 /products/vakuumnye-pompy/23575/ /products/dlya-penisa24/26181/
+
+Redirect 301 /products/seks-mebel/ /products/seks-mebel47/
+
+Redirect 301 /products/vakuumnye-pompy/23590/ /products/dlya-penisa24/26197/
+
+Redirect 301 /products/vakuumnye-pompy/23586/ /products/dlya-penisa24/26192/
+
+Redirect 301 /products/vozbujdayushchie-sredstva-dlya-mujchin/22605/ /products/vozbujdayushchie-sredstva-dlya-mujchin74/24501/
+
+Redirect 301 /products/vakuumnye-pompy/23591/ /products/dlya-penisa24/26198/
+
+Redirect 301 /products/vozbujdayushchie-sredstva-dlya-mujchin/22589/ /products/vozbujdayushchie-sredstva-dlya-mujchin74/24484/
+
+Redirect 301 /products/kolca-i-nasadki/22933/ /products/nasadki39/25031/
+
+Redirect 301 /products/strapony-i-falloprotezy/23709/ /products/jenskie-strapony32/26251/
+
+Redirect 301 /products/vaginy-i-masturbatory/22972/ /products/vaginy15/25151/
+
+Redirect 301 /products/massajnye-masla-i-svechi/22758/ /products/massajnye-masla-i-svechi6/24838/
+
+Redirect 301 /products/vakuumnye-pompy/pompy-dlya-grudi/ /products/vakuumnye-pompy31/pompy-dlya-grudi74/
+
+Redirect 301 /products/bad-dlya-zdorovya-i-krasoty/22927/ /products/bad-dlya-zdorovya-i-krasoty4/25025/
+
+Redirect 301 /products/kolca-i-nasadki/22949/ /products/nasadki39/25047/
+
+Redirect 301 /products/vakuumnye-pompy/23593/ /products/dlya-penisa24/26200/
+
+Redirect 301 /products/vaginy-i-masturbatory/masturbatory-s-vibro/23680/ /products/masturbatory-s-vibro100/25178/
+
+Redirect 301 /products/vakuumnye-pompy/23589/ /products/dlya-penisa24/26195/
+
+Redirect 301 /products/massajery-prostaty/ /products/massajery-prostaty29/
+
+Redirect 301 /products/suveniry/22459/ /products/suveniry34/24549/
+
+Redirect 301 /products/suveniry/22462/ /products/suveniry34/24552/
+
+Redirect 301 /products/kolca-i-nasadki/ /products/kolca-i-nasadki17/
+
+Redirect 301 /products/vakuumnye-pompy/23567/ /products/dlya-penisa24/26173/
+
+Redirect 301 /products/bad-dlya-zdorovya-i-krasoty/22924/ /products/bad-dlya-zdorovya-i-krasoty4/25022/
+
+Redirect 301 /products/kolca-i-nasadki/22946/ /products/nasadki39/25044/
+
+Redirect 301 /products/kolca-i-nasadki/nasadki/22934/ /products/nasadki39/25032/
+
+Redirect 301 /products/massajnye-masla-i-svechi/22767/ /products/massajnye-masla-i-svechi6/24847/
+
+Redirect 301 /products/vozbujdayushchie-sredstva-dlya-mujchin/22598/ /products/vozbujdayushchie-sredstva-dlya-mujchin74/24493/
+
+Redirect 301 /products/lubrikanty/analnye-smazki/ /products/lubrikanty48/analnye-smazki56/
+
+Redirect 301 /products/suveniry/22475/ /products/suveniry34/24565/
+
+Redirect 301 /products/vozbujdayushchie-sredstva-dlya-mujchin/22602/ /products/vozbujdayushchie-sredstva-dlya-mujchin74/24498/
+
+Redirect 301 /products/vozbujdayushchie-sredstva-dlya-mujchin/22613/ /products/vozbujdayushchie-sredstva-dlya-mujchin74/24509/
+
+Redirect 301 /products/duhi-s-feromonami/23739/ /products/jenskie21/26300/
+
+Redirect 301 /products/elektroseks/22905/ /products/elektroseks45/25003/
+
+
+
+Redirect 301 /products/strapony-i-falloprotezy/23715/ /products/jenskie-strapony32/26257/
+
+Redirect 301 /products/vaginy-i-masturbatory/22980/ /products/vaginy15/25159/
+
+Redirect 301 /products/vibratory/ /products/vibratory75/
+
+Redirect 301 /products/vozbujdayushchie-sredstva-dlya-mujchin/22587/ /products/vozbujdayushchie-sredstva-dlya-mujchin74/24482/
+
+Redirect 301 /products/ekstendery/ /products/ekstendery95/
+
+Redirect 301 /products/vakuumnye-pompy/23573/ /products/dlya-penisa24/26179/
+
+Redirect 301 /products/vozbujdayushchie-sredstva-dlya-jenshchin/22819/ /products/vozbujdayushchie-sredstva-dlya-jenshchin38/24914/
+
+Redirect 301 /products/duhi-s-feromonami/23746/ /products/jenskie21/26308/
+
+Redirect 301 /products/suveniry/22455/ /products/suveniry34/24545/
+
+Redirect 301 /products/kolca-i-nasadki/vibrokolca/23458/ /products/vibrokolca15/25126/
+
+
+Redirect 301 /products/vakuumnye-pompy/23576/ /products/dlya-penisa24/26196/
+
+Redirect 301 /products/kolca-i-nasadki/22951/ /products/nasadki39/25049/
+
+Redirect 301 /products/elektroseks/ /products/elektroseks45/
+
+Redirect 301 /products/massajnye-masla-i-svechi/22750/ /products/massajnye-masla-i-svechi6/24830/
+
+Redirect 301 /products/suveniry/22469/ /products/suveniry34/24559/
+
+Redirect 301 /products/duhi-s-feromonami/23736/ /products/jenskie21/26297/
+
+Redirect 301 /products/suveniry/22473/ /products/suveniry34/24563/
+
+Redirect 301 /products/kolca-i-nasadki/22935/ /products/nasadki39/25033/
+
+
+Redirect 301 /products/vaginy-i-masturbatory/masturbatory-s-vibro/23688/ /products/masturbatory-s-vibro100/25186/
+
+Redirect 301 /products/massajnye-masla-i-svechi/22754/ /products/massajnye-masla-i-svechi6/24834/
+
+Redirect 301 /products/suveniry/22464/ /products/suveniry34/24554/
+
+Redirect 301 /products/vozbujdayushchie-sredstva-dlya-mujchin/22601/ /products/vozbujdayushchie-sredstva-dlya-mujchin74/24497/
+
+Redirect 301 /products/duhi-s-feromonami/23726/ /products/jenskie21/26284/
+
+Redirect 301 /products/vozbujdayushchie-sredstva-dlya-mujchin/22588/ /products/vozbujdayushchie-sredstva-dlya-mujchin74/24483/
+
+Redirect 301 /products/bad-dlya-zdorovya-i-krasoty/22922/ /products/bad-dlya-zdorovya-i-krasoty4/25020/
+
+Redirect 301 /products/vaginy-i-masturbatory/masturbatory-bez-vibro/ /products/vaginy-i-masturbatory16/masturbatory-bez-vibro44/
+
+Redirect 301 /products/vozbujdayushchie-sredstva-dlya-mujchin/22612/ /products/vozbujdayushchie-sredstva-dlya-mujchin74/24508/
+
+Redirect 301 /products/kolca-i-nasadki/vibrokolca/23441/ /products/vibrokolca15/25109/
+
+Redirect 301 /products/kolca-i-nasadki/22940/ /products/nasadki39/25038/
+
+Redirect 301 /products/strapony-i-falloprotezy/23939/ /products/universalnye2/26267/
+
+Redirect 301 /products/bad-dlya-zdorovya-i-krasoty/22926/ /products/bad-dlya-zdorovya-i-krasoty4/25024/
+
+Redirect 301 /products/kolca-i-nasadki/22930/ /products/nasadki39/25028/
+
+Redirect 301 /products/massajnye-masla-i-svechi/22755/ /products/massajnye-masla-i-svechi6/24835/
+
+Redirect 301 /products/strapony-i-falloprotezy/falloprotezy/ /products/strapony-i-falloprotezy21/
+
+Redirect 301 /products/vakuumnye-pompy/23584/ /products/dlya-penisa24/26190/
+
+Redirect 301 /products/vibratory/22447/ /products/vibratory75/24519/
+
+Redirect 301 /products/vakuumnye-pompy/23585/ /products/dlya-penisa24/26191/
+
+Redirect 301 /products/vakuumnye-pompy/vaginalnye-pompy/ /products/vakuumnye-pompy31/vaginalnye-pompy70/
+
+Redirect 301 /products/vozbujdayushchie-sredstva-dlya-mujchin/22599/ /products/vozbujdayushchie-sredstva-dlya-mujchin74/24494/
+
+Redirect 301 /products/kolca-i-nasadki/22958/ /products/nasadki39/25056/
+
+Redirect 301 /products/duhi-s-feromonami/23734/ /products/jenskie21/26295/
+
+Redirect 301 /products/vaginalnye-trenajery/ /products/vaginalnye-trenajery31/
+
+Redirect 301 /products/duhi-s-feromonami/23729/ /products/jenskie21/26287/
+
+Redirect 301 /products/kolca-i-nasadki/22955/ /products/nasadki39/25053/
+
+Redirect 301 /products/vozbujdayushchie-sredstva-dlya-jenshchin/22818/ /products/vozbujdayushchie-sredstva-dlya-jenshchin38/24913/
+
+Redirect 301 /products/bad-dlya-zdorovya-i-krasoty/22921/ /products/bad-dlya-zdorovya-i-krasoty4/25019/
+
+Redirect 301 /products/kolca-i-nasadki/nasadki/22954/ /products/nasadki39/25052/
+
+Redirect 301 /products/kolca-i-nasadki/vibrokolca/23450/ /products/vibrokolca15/25118/
+
+Redirect 301 /products/duhi-s-feromonami/23731/ /products/jenskie21/26290/
+
+Redirect 301 /products/lubrikanty/23142/ /products/oralnye-smazki15/25758/
+
+Redirect 301 /products/aksessuary-dlya-grudi/ /products/aksessuary-dlya-grudi56/
+
+Redirect 301 /products/kolca-i-nasadki/udlinniteli/ /products/kolca-i-nasadki17/udlinniteli52/
+
+Redirect 301 /products/suveniry/22453/ /products/suveniry34/24543/
+
+Redirect 301 /products/vozbujdayushchie-sredstva-dlya-mujchin/22590/ /products/vozbujdayushchie-sredstva-dlya-mujchin74/24485/
+
+Redirect 301 /products/kolca-i-nasadki/nasadki/22947/ /products/nasadki39/25045/
+
+Redirect 301 /products/kolca-i-nasadki/22944/ /products/nasadki39/25042/
+
+Redirect 301 /products/kolca-i-nasadki/vibrokolca/23465/ /products/vibrokolca15/25133/
+
+Redirect 301 /products/massajnye-masla-i-svechi/22763/ /products/massajnye-masla-i-svechi6/24843/
+
+Redirect 301 /products/vakuumnye-pompy/gidropompy/ /products/vakuumnye-pompy31/gidropompy62/
+
+Redirect 301 /products/kolca-i-nasadki/22939/ /products/nasadki39/25037/
+
+Redirect 301 /products/massajnye-masla-i-svechi/22765/ /products/massajnye-masla-i-svechi6/24845/
+
+Redirect 301 /products/vozbujdayushchie-sredstva-dlya-mujchin/22603/ /products/vozbujdayushchie-sredstva-dlya-mujchin74/24499/
+
+Redirect 301 /products/lubrikanty/uhod-za-igrushkami/ /products/lubrikanty48/uhod-za-igrushkami90/
+
+Redirect 301 /products/suveniry/22452/ /products/suveniry34/24542/
+
+Redirect 301 /products/lubrikanty/23170/ /products/vaginalnye-smazki75/25786/
+
+Redirect 301 /products/suveniry/22470/ /products/suveniry34/24560/
+
+Redirect 301 /products/kolca-i-nasadki/22936/ /products/nasadki39/25034/
+
+
+
+
+
+
