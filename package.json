@@ -1,0 +1,25 @@
+{
+  "name": "country_systems",
+  "version": "0.1.0",
+  "description": "test",
+  "main": "index.php",
+  "scripts": {
+    "test": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zolotarevkirill/country_systems.git"
+  },
+  "keywords": [
+    "country"
+  ],
+  "author": "Zolotarev KIrill",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zolotarevkirill/country_systems/issues"
+  },
+  "homepage": "https://github.com/zolotarevkirill/country_systems#readme",
+  "devDependencies": {
+    "gulp-clean-css": "^2.0.11"
+  }
+}
